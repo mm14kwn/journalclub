@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Motivation}{2}{0}{1}
+\beamer@sectionintoc {2}{Details of the Method}{3}{0}{2}
+\beamer@sectionintoc {3}{Results and Validation}{3}{0}{3}
+\beamer@sectionintoc {4}{Further Developments and Modern Methods}{3}{0}{4}

@@ -1,0 +1,103 @@
+\ProvidesPackage{mystyle}
+\usepackage[round]{natbib}
+\usepackage{siunitx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.11}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{nicefrac}
+\usepackage{xcolor}
+\usepackage{calc}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usepackage{algpseudocode}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\definecolor{darkred}{RGB}{153,0,0}
+\usepackage{listings}
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+basicstyle=\small\ttfamily,
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{darkred},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break,hold},emphstyle=[1]\color{mylilas}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+\definecolor{color1}{RGB}{0,0,90}
+\definecolor{color2}{RGB}{0,20,20}
+\usepackage{hyperref}
+\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=color2,citecolor=color1,linkcolor=color1,bookmarksopen=false,pdftitle={Title},pdfauthor={Author}}
+\usepackage[noabbrev]{cleveref}
+\newcommand{\rhob}{\bar{\rho}}
+\newcommand{\srho}{\rhob + (\rho(\bm{x},t) -\rhob)}
+\newcommand{\srhos}{\rhob + (\rho -\rhob)}
+\newcommand{\DD}[2]{\frac{D#1}{D#2}}
+\newcommand{\Dt}[1]{\DD{#1}{t}}
+\newcommand{\vel}{\bm{u}}
+\newcommand{\grav}{\bm{g}}
+\newcommand{\del}{\nabla}
+\newcommand{\deldot}{\nabla \cdot}
+\newcommand{\delcross}{\nabla \times}
+\newcommand{\inv}[1]{\frac{1}{#1}}
+\newcommand{\bO}{\bm{\Omega}}
+\newcommand{\bo}{\bm{\omega}}
+\newcommand{\qv}{\bm{q}}
+\newcommand{\delh}{\nabla_h}
+\newcommand{\DDh}[2]{\frac{D_h#1}{D#2}}
+\newcommand{\Dth}[1]{\DDh{#1}{t}}
+\newcommand{\Dthexp}[1]{\partial_t {#1} + u \partial_x {#1} + v \partial_y {#1}}
+\newcommand{\io}{\iota}
+\newcommand{\rans}{e^{\iota(kx+ly-\omega t)}}
+\newcommand{\psih}{\hat{\psi}}
+\newcommand{\dt}{\partial_t}
+\newcommand{\dx}{\partial_x}
+\newcommand{\dy}{\partial_y}
+\newcommand{\dz}{\partial_z}
+\newcommand{\lpsi}{\widetilde{\psi}}
+\newcommand{\lpsia}{\lpsi_1}
+\newcommand{\lpsib}{\lpsi_2}
+\newcommand{\psibar}{\overline{\psi}}
+\newcommand{\ransq}{e^{2\iota(kx+ly-\omega t)}}
+\newcommand{\lu}{\widetilde{u}}
+\newcommand{\lv}{\widetilde{v}}
+\newcommand{\lh}{\widetilde{h}}
+\newcommand{\kans}{e^{\iota(kx-\omega t)}}
+\newcommand{\uh}{\hat{u}}
+\newcommand{\hh}{\hat{h}}
+\newcommand{\tans}{e^{-\iota\omega t}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Hcal}{\mathcal{H}}
+\newcommand{\intO}{\int_{\Omega}}
+\newcommand{\PSI}{\bm{\Psi}}
+\newcommand{\dO}{d\Omega}
+\newcommand{\MM}{\underline{\bm{M}}}
+\newcommand{\AAx}{\underline{\bm{Ax}}}
+\newcommand{\AAy}{\underline{\bm{Ay}}}
+\newcommand{\SSS}{\underline{\bm{S}}}
+\newcommand{\ff}{\underline{\bm{f}}}
+\newcommand{\deh}{\delta h}
+\newcommand{\dph}{\delta\phi}
+\newcommand{\edh}{\epsilon\deh}
+\newcommand{\edp}{\epsilon\dph}
+\newcommand{\dxx}{\partial_{xx}}
+\newcommand{\dxxx}{\partial_{xxx}}
+\newcommand{\dxxxx}{\partial_{xxxx}}
+\newtheorem{kwndef}{Definition}[section]
+\newtheorem{kwneg}{Example}[chapter]
+\setcounter{tocdepth}{4}
+\newlength\figureheight 
+\newlength\figurewidth
